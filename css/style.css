@@ -53,6 +53,7 @@ background: linear-gradient(35deg, #131418, #131a1f);
     height: auto;
     padding-top: 50px;
     padding-bottom: 50px;
+    color:#333537;
 }
 .service-box{
     display: flex;
@@ -63,7 +64,7 @@ background: linear-gradient(35deg, #131418, #131a1f);
 }
 
 .service-item{
-    background:linear-gradient(10deg, #d2d2d2, #f2f2f3);
+    background:linear-gradient(10deg, #d2d2d2, #fdf3fe);
     width: 40%;
     height: auto;
     border-radius: 5px;
