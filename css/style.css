@@ -47,8 +47,9 @@ section{
 height: 400px;
 background: linear-gradient(35deg, #131418, #131a1f);
 }
+/* Service */
 .service-section{
-    background: linear-gradient(135deg, #f8fafb, #b7c6cd) ;
+    background: linear-gradient(10deg, #b3bbbf, #ddeef0) ;
     height: auto;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -59,13 +60,21 @@ background: linear-gradient(35deg, #131418, #131a1f);
     justify-content: center;
     gap: 10px;
     margin: 0 auto;
-    
+}
+
+.service-item{
+    background:linear-gradient(10deg, #d2d2d2, #f2f2f3);
+    width: 40%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px -1px rgba(0,0,0,0.1);
 }
 .centerElement{
     margin: 0 auto;
 }
 .upspace{
-    margin-top: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 .center-text-title{
     text-align:  center;
@@ -76,23 +85,22 @@ background: linear-gradient(35deg, #131418, #131a1f);
     width: auto;
     margin: 0px auto;
 }
-.service-item{
-    background-color: #eaebed;
-    width: 40%;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0px 5px 5px -1px rgba(0,0,0,0.1);
+.spacearround{
+    margin: 30px;
 }
 .text-box{
     width: 90%;
     margin: 0 auto;
-   
 }
 .text-center{
     text-align: center;
+    padding:0 50px;
+ 
 }
 .text-justify{
-    text-align: justify;
+    text-align: center;
+    line-height: 1.6;
+    padding-bottom: 30px;
 }
 @media screen and (max-width:800px){
     nav{
