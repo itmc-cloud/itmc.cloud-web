@@ -1,0 +1,177 @@
+/* code slash */
+.gg-code-slash {
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    transform: rotate(15deg) scale(var(--ggs,1));
+    width: 2px;
+    height: 16px;
+    background: currentColor
+   }
+   
+   .gg-code-slash::after,
+   .gg-code-slash::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    transform: rotate(-60deg)
+   }
+   
+   .gg-code-slash::before {
+    border-left: 2px solid;
+    border-top: 2px solid;
+    left: -8px;
+    top: 5px
+   }
+   
+   .gg-code-slash::after {
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    right: -8px;
+    top: 3px
+   } 
+
+   /* ethernet */
+   .gg-ethernet {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 16px;
+    height: 20px;
+    border: 2px solid;
+    box-shadow: 0 10px 0 -7px
+   }
+   
+   .gg-ethernet::after,
+   .gg-ethernet::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    top: 6px
+   }
+   
+   .gg-ethernet::before {
+    width: 8px;
+    height: 8px;
+    border: 2px solid;
+    border-top: 0;
+    left: 2px
+   }
+   
+   .gg-ethernet::after {
+    width: 16px;
+    height: 2px;
+    border-left: 6px solid;
+    border-right: 6px solid;
+    left: -2px
+   } 
+
+   /* chart */
+   .gg-chart {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid;
+    border-left: 2px solid
+   }
+   
+   .gg-chart::after,
+   .gg-chart::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border: 2px solid;
+    box-sizing: border-box
+   }
+   
+   .gg-chart::before {
+    border-top-right-radius: 100px;
+    right: -2px;
+    top: -2px;
+    width: 8px;
+    height: 8px
+   }
+   
+   .gg-chart::after {
+    width: 18px;
+    height: 18px;
+    border-radius: 100px;
+    border-right-color: transparent;
+    left: -10px;
+    transform: rotate(-45deg)
+   } 
+   /* support */
+   .gg-support {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg) scale(var(--ggs,1));
+    border: 5px solid transparent;
+    box-shadow:
+    0 0 0 2px,
+    inset 0 0 0 2px;
+    border-radius: 40px
+   }
+   
+   .gg-support::after,
+   .gg-support::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute
+   }
+   
+   .gg-support::before {
+    border-left: 9px solid;
+    border-right: 9px solid;
+    width: 24px;
+    height: 2px;
+    left: -7px;
+    top: 4px
+   }
+   
+   .gg-support::after {
+    width: 2px;
+    height: 24px;
+    border-top: 9px solid;
+    border-bottom: 9px solid;
+    left: 4px;
+    top: -7px
+   } 
+   /*shopping bag */
+   .gg-shopping-bag {
+    transform: scale(var(--ggs,1))
+   }
+   
+   .gg-shopping-bag,
+   .gg-shopping-bag::after {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid;
+    border-radius: 3px
+   }
+   
+   .gg-shopping-bag::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 6px;
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+    border-top: 0;
+    top: 2px;
+    left: 3px
+   } 
