@@ -1,0 +1,131 @@
+@import url("/css/icons.css");
+*{
+    margin:0;
+    font-family: sans-serif;
+}
+nav{
+    height: 60px;
+    width: 100vw;
+    /*background-color: #131418; */
+    background: #eaebed;
+    display:flex;
+    position:block;
+    
+    box-shadow: 0px 5px 5px -1px rgba(0,0,0,0.1);
+}
+nav img{
+    width: 100px;
+    height: 35px;
+}
+.nav-links{
+    display:flex;
+    color:#131a1f;
+    list-style: none;
+    width: 80vw;
+    justify-content: center;
+    /*border: 1px solid red; */
+    align-items: center;
+    
+    
+}
+.nav-links li a{
+    margin: 0 20px;
+}
+.hamburger{
+    width: 30px;
+    height: 30px;
+    background: #f2f5f7;
+}
+section{
+    height:100px;
+    background-color: #f2f5f7;
+}
+
+.carousel-section{
+    display: block;
+    margin-top:60px;
+height: 400px;
+background: linear-gradient(35deg, #131418, #131a1f);
+}
+.service-section{
+    background: linear-gradient(135deg, #f8fafb, #b7c6cd) ;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.service-box{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 auto;
+    
+}
+.centerElement{
+    margin: 0 auto;
+}
+.upspace{
+    margin-top: 20px;
+}
+.center-text-title{
+    text-align:  center;
+}
+.centerItem{
+    display:block;
+    border: 1px solid red;
+    width: auto;
+    margin: 0px auto;
+}
+.service-item{
+    background-color: #eaebed;
+    width: 40%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px -1px rgba(0,0,0,0.1);
+}
+.text-box{
+    width: 90%;
+    margin: 0 auto;
+   
+}
+.text-center{
+    text-align: center;
+}
+.text-justify{
+    text-align: justify;
+}
+@media screen and (max-width:800px){
+    nav{
+        position:fixed;
+        z-index:3;
+    }
+    .hamburger{
+        display: block;
+        position: absolute;
+        transform: translate(-5%, -50%);
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, 50%);
+        z-index:2;
+        transition: all 0.7s ease;
+    }
+    .nav-links{
+        position:fixed;
+        height:100vh;
+        width:100%;
+        background: #131418;
+        flex-direction: column;
+        transition: all 1s ease-out;
+        clip-path: circle(50px at 90% -10%);
+    }
+    .nav-links.open{
+        clip-path: circle(1000px at 90% -10%);
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+
+    li.fade{
+        opacity: 1;
+    }
+}
